@@ -101,7 +101,7 @@ AC_ARG_WITH([sbcl_bin_base],
   [SBCL_BIN_URI=$withval],[SBCL_BIN_URI="https://github.com/roswell/sbcl_bin/releases/download/"])
 AC_DEFINE_UNQUOTED([SBCL_BIN_URI],["${SBCL_BIN_URI}"],[uri for sbcl master])
 
-AC_ARG_WITH([platformtsvl_base],
+AC_ARG_WITH([platformtsv_base],
   [AC_HELP_STRING([--with-platformtsv-base=URI],[set URI for sbcl-bin_uri.tsv [default=https://github.com/roswell/sbcl_bin/releases/download/files/sbcl-bin_uri.tsv]])],
   [PLATFORM_TSV_URI=$withval],[PLATFORM_TSV_URI=https://github.com/roswell/sbcl_bin/releases/download/files/sbcl-bin_uri.tsv])
 AC_DEFINE_UNQUOTED([PLATFORM_TSV_URI],["${PLATFORM_TSV_URI}"],[uri for sbcl-bin_uri.tsv])
